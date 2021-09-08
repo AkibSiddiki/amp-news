@@ -8,91 +8,22 @@
   <link rel="stylesheet" type="text/css" href="https://www.daily-bangladesh.com/common/css/SolaimanLipi.css">
   <meta name="viewport" content="width=device-width" />
   <meta name="amp-google-client-id-api" content="googleanalytics" />
-
   <script async="" src="https://cdn.ampproject.org/v0.js"></script>
-  <!-- amo-social-share-->
+  <style amp-boilerplate=""> body { -webkit-animation: -amp-start 8s steps(1, end) 0s 1 normal both; -moz-animation: -amp-start 8s steps(1, end) 0s 1 normal both; -ms-animation: -amp-start 8s steps(1, end) 0s 1 normal both; animation: -amp-start 8s steps(1, end) 0s 1 normal both; } @-webkit-keyframes -amp-start { from { visibility: hidden; } to { visibility: visible; } } @-moz-keyframes -amp-start { from { visibility: hidden; } to { visibility: visible; } } @-ms-keyframes -amp-start { from { visibility: hidden; } to { visibility: visible; } } @-o-keyframes -amp-start { from { visibility: hidden; } to { visibility: visible; } } @keyframes -amp-start { from { visibility: hidden; } to { visibility: visible; } } </style>
+  <noscript> <style amp-boilerplate=""> body { -webkit-animation: none; -moz-animation: none; -ms-animation: none; animation: none; } </style> </noscript>
+  <!--AMP extra JS-->
   <script async custom-element="amp-social-share" src="https://cdn.ampproject.org/v0/amp-social-share-0.1.js"></script>
-  <!-- amp-social-share -->
-  <script async custom-element="amp-facebook-comments"
-    src="https://cdn.ampproject.org/v0/amp-facebook-comments-0.1.js"></script>
-  <style amp-boilerplate="">
-    body {
-      -webkit-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
-      -moz-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
-      -ms-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
-      animation: -amp-start 8s steps(1, end) 0s 1 normal both;
-    }
-
-    @-webkit-keyframes -amp-start {
-      from {
-        visibility: hidden;
-      }
-
-      to {
-        visibility: visible;
-      }
-    }
-
-    @-moz-keyframes -amp-start {
-      from {
-        visibility: hidden;
-      }
-
-      to {
-        visibility: visible;
-      }
-    }
-
-    @-ms-keyframes -amp-start {
-      from {
-        visibility: hidden;
-      }
-
-      to {
-        visibility: visible;
-      }
-    }
-
-    @-o-keyframes -amp-start {
-      from {
-        visibility: hidden;
-      }
-
-      to {
-        visibility: visible;
-      }
-    }
-
-    @keyframes -amp-start {
-      from {
-        visibility: hidden;
-      }
-
-      to {
-        visibility: visible;
-      }
-    }
-  </style>
-  <noscript>
-    <style amp-boilerplate="">
-      body {
-        -webkit-animation: none;
-        -moz-animation: none;
-        -ms-animation: none;
-        animation: none;
-      }
-    </style>
-  </noscript>
-
+  <script async custom-element="amp-facebook-comments" src="https://cdn.ampproject.org/v0/amp-facebook-comments-0.1.js"></script>
   <script custom-element="amp-carousel" src="https://cdn.ampproject.org/v0/amp-carousel-0.1.js" async=""></script>
   <script custom-element="amp-sidebar" src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js" async=""></script>
   <script custom-element="amp-accordion" src="https://cdn.ampproject.org/v0/amp-accordion-0.1.js" async=""></script>
   <script custom-element="amp-form" src="https://cdn.ampproject.org/v0/amp-form-0.1.js" async=""></script>
   <script custom-element="amp-instagram" src="https://cdn.ampproject.org/v0/amp-instagram-0.1.js" async=""></script>
-
+  <script async custom-element="amp-position-observer" src="https://cdn.ampproject.org/v0/amp-position-observer-0.1.js"></script>
+  <script async custom-element="amp-animation" src="https://cdn.ampproject.org/v0/amp-animation-0.1.js"></script>
+  <!-- CUSTOM CSS -->
   <style amp-custom="">
     /*! Bassplate | MIT License | http://github.com/basscss/bassplate */
-
     /*! normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */
     html {
       font-family: SolaimanLipi, "SiyamRupali", Vrinda;
@@ -100,37 +31,60 @@
       -ms-text-size-adjust: 100%;
       -webkit-text-size-adjust: 100%;
     }
-
     body {
       margin: 0;
       color: black !important;
+      font-family: SolaimanLipi, "SiyamRupali", Vrinda !important;
     }
+    :root {
+      --color-primary: #005AF0;
+      --color-secondary: #00DCC0;
+      --color-text-light: #fff;
 
+      --space-2: 1rem;   /* 16px */
+
+      --box-shadow-1: 0 1px 1px 0 rgba(0,0,0,.14), 0 1px 1px -1px rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12);
+    }
+    .scrollToTop {
+      color: var(--color-text-light);
+      font-size: 1.4em;
+      box-shadow: var(--box-shadow-1);
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      border: none;
+      outline: none;
+      background: #346751;
+      z-index: 9999;
+      bottom: var(--space-2);
+      right: var(--space-2);
+      position: fixed;
+      opacity: 0;
+      visibility: hidden;
+    }
+    .text-black-70 {
+    	color: #1e1d1d;
+    }
     .bi.i-amphtml-element.i-amphtml-layout-fixed.i-amphtml-layout-size-defined.amp-social-share-email.i-amphtml-built.i-amphtml-layout {
       width: 38px !important;
       height: 38px !important;
     }
-
     .bi.i-amphtml-element.i-amphtml-layout-fixed.i-amphtml-layout-size-defined.amp-social-share-facebook.i-amphtml-built.i-amphtml-layout {
       width: 38px !important;
       height: 38px !important;
     }
-
     .bi.i-amphtml-element.i-amphtml-layout-fixed.i-amphtml-layout-size-defined.amp-social-share-whatsapp.i-amphtml-built.i-amphtml-layout {
       width: 38px !important;
       height: 38px !important;
     }
-
     .bi.i-amphtml-element.i-amphtml-layout-fixed.i-amphtml-layout-size-defined.amp-social-share-linkedin.i-amphtml-built.i-amphtml-layout {
       width: 38px !important;
       height: 38px !important;
     }
-
     .bi.i-amphtml-element.i-amphtml-layout-fixed.i-amphtml-layout-size-defined.amp-social-share-twitter.i-amphtml-built.i-amphtml-layout {
       width: 38px !important;
       height: 38px !important;
     }
-
     article,
     aside,
     footer,
@@ -139,76 +93,62 @@
     section {
       display: block;
     }
-
     h1 {
       font-size: 2em;
       margin: 0.67em 0;
     }
-
     figcaption,
     figure,
     main {
       display: block;
       font-family: SolaimanLipi, "SiyamRupali", Vrinda;
     }
-
     figure {
       margin: 1em 40px;
     }
-
     hr {
       box-sizing: content-box;
       height: 0;
       overflow: visible;
     }
-
     pre {
       font-family: monospace, monospace;
       font-size: 1em;
     }
-
     a {
       background-color: transparent;
       -webkit-text-decoration-skip: objects;
     }
-
     a:active,
     a:hover {
       outline-width: 0;
     }
-
     abbr[title] {
       border-bottom: none;
       text-decoration: underline;
       text-decoration: underline dotted;
     }
-
     b,
     strong {
       font-weight: inherit;
       font-weight: bolder;
     }
-
     code,
     kbd,
     samp {
       font-family: monospace, monospace;
       font-size: 1em;
     }
-
     dfn {
       font-style: italic;
     }
-
     mark {
       background-color: #ff0;
       color: #000;
     }
-
     small {
       font-size: 80%;
     }
-
     sub,
     sup {
       font-size: 75%;
@@ -216,33 +156,26 @@
       position: relative;
       vertical-align: baseline;
     }
-
     sub {
       bottom: -0.25em;
     }
-
     sup {
       top: -0.5em;
     }
-
     audio,
     video {
       display: inline-block;
     }
-
     audio:not([controls]) {
       display: none;
       height: 0;
     }
-
     img {
       border-style: none;
     }
-
     svg:not(:root) {
       overflow: hidden;
     }
-
     button,
     input,
     optgroup,
@@ -253,7 +186,6 @@
       line-height: 1.15;
       margin: 0;
     }
-
     button,
     input {
       overflow: visible;
@@ -1399,7 +1331,8 @@
 
     .border-bottom {
       border-bottom-style: solid;
-      border-bottom-width: 1px;
+      border-bottom-width: 2px;
+      color: #C0273996 !important;
     }
 
     .border-left {
@@ -1750,8 +1683,8 @@
     }
 
     .ampstart-footer {
-      background-color: #171717;
-      color: #EDEDED;
+      background-color: #E0E0E0;
+      color: #222831;
       padding-top: 5rem;
       padding-bottom: 5rem;
     }
@@ -2298,7 +2231,7 @@
       ☰
     </div>
     <amp-img src="https://www.daily-bangladesh.com/media/common/logo.png" width="137.5" height="54.5" layout="fixed"
-      class="my0 mx-auto" alt="The Blog"></amp-img>
+      class="my1 mx-auto" alt="Daily Bangladesh"></amp-img>
   </header>
   <!-- Start Sidebar -->
   <amp-sidebar id="header-sidebar" class="ampstart-sidebar px3" layout="nodisplay">
@@ -2396,9 +2329,51 @@
   <main id="content" role="main" class="">
     <article>
       <header>
-        <span class="ampstart-subtitle block px3 pt2 mb2">জাতীয়</span>
+        <!-- scroll-top start-->
+        <span class="ampstart-subtitle block px3 pt3 mb2"><a id="top" href="#">জাতীয়</a>
+          <amp-position-observer on="enter:hideAnim.start; exit:showAnim.start" layout="nodisplay">
+          </amp-position-observer>
+        </span>
+        <amp-animation id="showAnim" layout="nodisplay">
+          <script type="application/json">
+            {
+              "duration": "200ms",
+               "fill": "both",
+               "iterations": "1",
+               "direction": "alternate",
+               "animations": [
+                 {
+                   "selector": "#scrollToTopButton",
+                   "keyframes": [
+                     { "opacity": "1", "visibility": "visible" }
+                   ]
+                 }
+               ]
+            }
+          </script>
+        </amp-animation>
+        <!-- ... and the second one is for adding the button.-->
+        <amp-animation id="hideAnim" layout="nodisplay">
+          <script type="application/json">
+            {
+             "duration": "200ms",
+               "fill": "both",
+               "iterations": "1",
+               "direction": "alternate",
+               "animations": [
+                 {
+                   "selector": "#scrollToTopButton",
+                   "keyframes": [
+                     { "opacity": "0", "visibility": "hidden" }
+                   ]
+                 }
+               ]
+           }
+          </script>
+        </amp-animation>
+        <button id="scrollToTopButton" on="tap:top.scrollTo(duration=200)" class="scrollToTop">⌃</button>
+        <!-- scroll-top end -->
         <h3 class="mb1 px3">সরকারি কর্মকর্তাদের স্যার-ম্যাডাম ডাকার নিয়ম নেই: জনপ্রশাসন প্রতিমন্ত্রী</h3>
-
         <!-- Start byline -->
         <address class="ampstart-byline clearfix mb4 px3 h5">
           <p>
@@ -2425,7 +2400,6 @@
           মঙ্গলবার দুপুরে বাংলাদেশ সেক্রেটারিয়েট রিপোর্টার্স ফোরাম আয়োজিত বিএসআরএফ
           সংলাপে অংশ নিয়ে তিনি এ কথা বলেন।
         </p>
-
         <p class="mb4 px3">
           তিনি আরো বলেন, স্যার মানে মহোদয়। সেবা নিতে গেলে যদি অভ্যর্থনা জানানো না হয়,
           সেটাই অন্যায়। এটাও একধরনের দুর্নীতি। কর্মকর্তাদের মনে রাখতে হবে আপনার আচরণ সরকারের আচরণ। কারণ কর্মকর্তাদের
@@ -2433,17 +2407,13 @@
         </p>
         <amp-facebook-comments width="552" height="310" layout="responsive" data-numposts="5"
           data-href="http://www.directlyrics.com/adele-25-complete-album-lyrics-news.html"></amp-facebook-comments>
-
         <section>
-          <h3 class="mb4 px3 border-bottom">আরো পড়ুন</h3>
-
+          <h4 class="mb1 px3 text-black-70 ">আরো পড়ুন</h4>
+          <div class="border-bottom"></div>
           <amp-img src="../img/blog/popular1.jpg" width="180" height="144" layout=""
             alt="The sandy beach walk" class="mb1"></amp-img>
-          <h3 class="mb4 inline-block">Beach Getaway</h3>
-
           <amp-img src="../img/blog/popular2.png" width="600" height="344" layout="responsive" alt="Dinner on a plate"
             class="mb1"></amp-img>
-          <h3 class="mb4">Dinner party tips</h3>
         </section>
         </section>
     </article>
