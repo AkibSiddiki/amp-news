@@ -23,6 +23,7 @@
   <script async custom-element="amp-position-observer"
     src="https://cdn.ampproject.org/v0/amp-position-observer-0.1.js"></script>
   <script async custom-element="amp-animation" src="https://cdn.ampproject.org/v0/amp-animation-0.1.js"></script>
+  <script async custom-element="amp-ad" src="https://cdn.ampproject.org/v0/amp-ad-0.1.js"></script>
   <!-- CUSTOM CSS -->
   <style amp-custom="">
     /*! Bassplate | MIT License | http://github.com/basscss/bassplate */
@@ -76,26 +77,32 @@
     .bi.i-amphtml-element.i-amphtml-layout-fixed.i-amphtml-layout-size-defined.amp-social-share-email.i-amphtml-built.i-amphtml-layout {
       width: 38px !important;
       height: 38px !important;
+      border-radius: 50%;
     }
 
     .bi.i-amphtml-element.i-amphtml-layout-fixed.i-amphtml-layout-size-defined.amp-social-share-facebook.i-amphtml-built.i-amphtml-layout {
       width: 38px !important;
       height: 38px !important;
+      border-radius: 50%;
     }
 
     .bi.i-amphtml-element.i-amphtml-layout-fixed.i-amphtml-layout-size-defined.amp-social-share-whatsapp.i-amphtml-built.i-amphtml-layout {
       width: 38px !important;
       height: 38px !important;
+      border-radius: 50%;
+      
     }
 
     .bi.i-amphtml-element.i-amphtml-layout-fixed.i-amphtml-layout-size-defined.amp-social-share-linkedin.i-amphtml-built.i-amphtml-layout {
       width: 38px !important;
       height: 38px !important;
+      border-radius: 50%;
     }
 
     .bi.i-amphtml-element.i-amphtml-layout-fixed.i-amphtml-layout-size-defined.amp-social-share-twitter.i-amphtml-built.i-amphtml-layout {
       width: 38px !important;
       height: 38px !important;
+      border-radius: 50%;
     }
 
     article,
@@ -136,12 +143,12 @@
 
     a {
       background-color: transparent;
-      -webkit-text-decoration-skip: objects;
+      text-decoration: none;
     }
 
     a:active,
     a:hover {
-      outline-width: 0;
+      color: #2C394B;
     }
 
     abbr[title] {
@@ -340,7 +347,6 @@
 
     .h4 {
       font-size: 1.125rem;
-      line-height: 1.6rem !important;
     }
 
     .h5 {
@@ -2139,7 +2145,7 @@
     }
 
     .ampstart-sidebar .ampstart-icon {
-      fill: #003f93;
+      fill: #346751;
     }
 
     .ampstart-sidebar-header {
@@ -2427,9 +2433,9 @@
           <amp-social-share class="bi" type="whatsapp" aria-label="Share on WhatsApp"></amp-social-share>
         </div>
         <amp-img src="https://www.daily-bangladesh.com/media/imgAll/2021March/20-2109071052.jpg" width="600"
-          height="344" layout="responsive" alt="জনপ্রশাসন প্রতিমন্ত্রী ফরহাদ হোসেন- ফাইল ছবি" class="mb4 mx3"></amp-img>
+          height="344" layout="responsive" alt="জনপ্রশাসন প্রতিমন্ত্রী ফরহাদ হোসেন- ফাইল ছবি" class="mb4"></amp-img>
       </header>
-      <p class="mb4 h4 bold px3">জনপ্রশাসন প্রতিমন্ত্রী ফরহাদ হোসেন বলেছেন, কর্মকর্তাদের জনগণের সঙ্গে মিশে যেতে হবে। সরকারি
+      <p class="mb3 h4 bold px3">জনপ্রশাসন প্রতিমন্ত্রী ফরহাদ হোসেন বলেছেন, কর্মকর্তাদের জনগণের সঙ্গে মিশে যেতে হবে। সরকারি
         কর্মকর্তাদের স্যার বা ম্যাডাম ডাকার কোনো নিয়ম রুলস অব বিজনেসে নেই। এ বিষয়ে কোনো কর্মকর্তা কারো সঙ্গে দুর্ব্যবহার
         করলে সেটা দুর্নীতি হিসেবে গন্য হবে।</p>
         <p class="mb4 h4 px3">
@@ -2443,7 +2449,7 @@
         </p>
         <amp-facebook-comments class="mb2 px1 mx2" width="552" height="310" layout="responsive" data-numposts="5"
           data-href="http://www.directlyrics.com/adele-25-complete-album-lyrics-news.html"></amp-facebook-comments>
-        <amp-embed
+          <amp-embed
            class="mb2 px1 mx2"
            type="taboola"
            width="400"
@@ -2455,61 +2461,74 @@
            data-article="auto"
           >
           </amp-embed>
-        <!-- Start Related Section -->
+          <!-- Start Related Section -->
         <section class="ampstart-related-section mb4 px3">
-          <h4 class="h3 mb1">আরো পড়ুন</h4>
+          <h3 class="h3 mb1">আরো পড়ুন</h3>
+          <div class="border-bottom"></div>
           <ul class="ampstart-related-section-items list-reset flex flex-wrap m0">
             <li class="col-12 sm-col-4 md-col-4 lg-col-4 pr2 py2">
               <figure class="ampstart-image-with-caption m0 relative mb4">
                 <amp-img src="https://www.daily-bangladesh.com/media/imgAll/2021March/f25-2109081013.jpg" width="300"
                   height="202" alt="প্রাণিসম্পদমন্ত্রীর" layout="responsive" class=""></amp-img>
                 <figcaption class="h4 mt1 mb-auto px3">
+                  <a href="#">
                   জনবান্ধব মানসিকতা নিয়ে দায়িত্ব পালনের আহ্বান প্রাণিসম্পদমন্ত্রীর
+                </a>
                 </figcaption>
               </figure>
             </li>
             <li class="col-12 sm-col-4 md-col-4 lg-col-4 pr2 py2">
               <figure class="ampstart-image-with-caption m0 relative mb4">
-                <amp-img src="https://www.daily-bangladesh.com/media/imgAll/2021March/f25-2109081013.jpg" width="300"
-                  height="202" alt="প্রাণিসম্পদমন্ত্রীর" layout="responsive" class=""></amp-img>
+                <amp-img src="https://www.daily-bangladesh.com/media/imgAll/2021March/joypurhat-2109081220.jpg" width="300"
+                  height="202" alt="একসঙ্গে জন্ম নেয়া তিন ভাই-বোন" layout="responsive" class=""></amp-img>
                 <figcaption class="h4 mt1 mb-auto px3">
-                  জনবান্ধব মানসিকতা নিয়ে দায়িত্ব পালনের আহ্বান প্রাণিসম্পদমন্ত্রীর
+                  <a href="#">
+                  জয়পুরহাটে একসঙ্গে জন্ম নিল তিন ভাই-বোন
+                </a>
                 </figcaption>
               </figure>
             </li>
             <li class="col-12 sm-col-4 md-col-4 lg-col-4 pr2 py2">
               <figure class="ampstart-image-with-caption m0 relative mb4">
-                <amp-img src="https://www.daily-bangladesh.com/media/imgAll/2021March/f25-2109081013.jpg" width="300"
-                  height="202" alt="প্রাণিসম্পদমন্ত্রীর" layout="responsive" class=""></amp-img>
+                <amp-img src="https://www.daily-bangladesh.com/media/imgAll/2021March/rohingya-1-2109040622.jpg" width="300"
+                  height="202" alt="রোহিঙ্গা ক্যাম্প- ফাইল ছবি" layout="responsive" class=""></amp-img>
                 <figcaption class="h4 mt1 mb-auto px3">
-                  জনবান্ধব মানসিকতা নিয়ে দায়িত্ব পালনের আহ্বান প্রাণিসম্পদমন্ত্রীর
+                  <a href="#">
+                  জঙ্গিদের টার্গেট রোহিঙ্গা ক্যাম্প: অর্থায়নে দেশি-বিদেশি এনজিও
+                </a>
                 </figcaption>
               </figure>
             </li>
             <li class="col-12 sm-col-4 md-col-4 lg-col-4 pr2 py2">
               <figure class="ampstart-image-with-caption m0 relative mb4">
-                <amp-img src="https://www.daily-bangladesh.com/media/imgAll/2021March/f25-2109081013.jpg" width="300"
-                  height="202" alt="প্রাণিসম্পদমন্ত্রীর" layout="responsive" class=""></amp-img>
+                <amp-img src="https://www.daily-bangladesh.com/media/imgAll/2021March/a-2109090500.jpg" width="300"
+                  height="202" alt="সুন্দর ত্বক" layout="responsive" class=""></amp-img>
                 <figcaption class="h4 mt1 mb-auto px3">
-                  জনবান্ধব মানসিকতা নিয়ে দায়িত্ব পালনের আহ্বান প্রাণিসম্পদমন্ত্রীর
+                <a href="#">
+                  সকালে ত্বকের যত্নে যা করবেন
+                </a>
                 </figcaption>
               </figure>
             </li>
             <li class="col-12 sm-col-4 md-col-4 lg-col-4 pr2 py2">
               <figure class="ampstart-image-with-caption m0 relative mb4">
-                <amp-img src="https://www.daily-bangladesh.com/media/imgAll/2021March/f25-2109081013.jpg" width="300"
-                  height="202" alt="প্রাণিসম্পদমন্ত্রীর" layout="responsive" class=""></amp-img>
+                <amp-img src="https://www.daily-bangladesh.com/media/imgAll/2021March/cc-2109090434.jpg" width="300"
+                  height="202" alt="কিডনি" layout="responsive" class=""></amp-img>
                 <figcaption class="h4 mt1 mb-auto px3">
-                  জনবান্ধব মানসিকতা নিয়ে দায়িত্ব পালনের আহ্বান প্রাণিসম্পদমন্ত্রীর
+                  <a href="#">
+                  কিডনির পাথর দূর করুন প্রাকৃতিক উপায়ে                
+                </a>
                 </figcaption>
               </figure>
             </li>
             <li class="col-12 sm-col-4 md-col-4 lg-col-4 pr2 py2">
               <figure class="ampstart-image-with-caption m0 relative mb4">
-                <amp-img src="https://www.daily-bangladesh.com/media/imgAll/2021March/f25-2109081013.jpg" width="300"
-                  height="202" alt="প্রাণিসম্পদমন্ত্রীর" layout="responsive" class=""></amp-img>
+                <amp-img src="https://www.daily-bangladesh.com/media/imgAll/2021March/Untitled-2-2109090420.jpg" width="300"
+                  height="202" alt="ময়মনসিংহ মেডিকেল কলেজ" layout="responsive" class=""></amp-img>
                 <figcaption class="h4 mt1 mb-auto px3">
-                  জনবান্ধব মানসিকতা নিয়ে দায়িত্ব পালনের আহ্বান প্রাণিসম্পদমন্ত্রীর
+                  <a href="#">
+                  ময়মনসিংহ মেডিকেলে আরও ৫ জনের প্রাণহানি                
+                </a>
                 </figcaption>
               </figure>
             </li>
