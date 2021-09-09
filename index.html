@@ -5,7 +5,7 @@
   <meta charset="utf-8" />
   <title>News Article Page</title>
   <link rel="canonical" href="https://www.akibsiddiki.github.io/amp-news" />
-  <link rel="stylesheet" href="https://www.daily-bangladesh.com/common/css/SolaimanLipi.css">
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@500&display=swap" rel="stylesheet">
   <meta name="viewport" content="width=device-width" />
   <meta name="amp-google-client-id-api" content="googleanalytics" />
   <script async="" src="https://cdn.ampproject.org/v0.js"></script>
@@ -17,11 +17,9 @@
     src="https://cdn.ampproject.org/v0/amp-facebook-comments-0.1.js"></script>
   <script custom-element="amp-carousel" src="https://cdn.ampproject.org/v0/amp-carousel-0.1.js" async=""></script>
   <script custom-element="amp-sidebar" src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js" async=""></script>
-  <script custom-element="amp-accordion" src="https://cdn.ampproject.org/v0/amp-accordion-0.1.js" async=""></script>
-  <script custom-element="amp-form" src="https://cdn.ampproject.org/v0/amp-form-0.1.js" async=""></script>
-  <script custom-element="amp-instagram" src="https://cdn.ampproject.org/v0/amp-instagram-0.1.js" async=""></script>
-  <script async custom-element="amp-position-observer"
+  <script custom-element="amp-accordion" src="https://cdn.ampproject.org/v0/amp-accordion-0.1.js" async=""></script30  <script async custom-element="amp-position-observer"
     src="https://cdn.ampproject.org/v0/amp-position-observer-0.1.js"></script>
+  <script async custom-element="amp-position-observer" src="https://cdn.ampproject.org/v0/amp-position-observer-0.1.js"></script>  
   <script async custom-element="amp-animation" src="https://cdn.ampproject.org/v0/amp-animation-0.1.js"></script>
   <script async custom-element="amp-ad" src="https://cdn.ampproject.org/v0/amp-ad-0.1.js"></script>
   <!-- CUSTOM CSS -->
@@ -29,7 +27,7 @@
     /*! Bassplate | MIT License | http://github.com/basscss/bassplate */
     /*! normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */
     html {
-      font-family: SolaimanLipi, "SiyamRupali", Vrinda;
+      font-family: 'Baloo Da 2', cursive;
       line-height: 1.4;
       -ms-text-size-adjust: 100%;
       -webkit-text-size-adjust: 100%;
@@ -37,9 +35,22 @@
 
     body {
       margin: 0;
-      color: black;
-      font-family: SolaimanLipi, "SiyamRupali", Vrinda;
+      color: black ;
+      font-family: 'Baloo Da 2', cursive;
     }
+    .body- {
+      margin: 0;
+      color: black ;
+      font-family: 'Baloo Da 2', cursive;
+    }
+
+    amp-social-share.roundedSocial {
+      border-radius: 50%;
+      background-size: 60%;
+      color: var(--color-text-light);
+    }
+
+
 
     :root {
       --color-primary: #005AF0;
@@ -69,6 +80,20 @@
       opacity: 0;
       visibility: hidden;
     }
+    .target {
+      position: relative;
+    }
+    .target-anchor {
+      position: absolute;
+      top: -72px;
+      left: 0;
+    }
+    .social-icon 
+    {
+	    width: 30px;
+	    height: 30px;
+    	border-radius: 50%;
+    }
 
     .text-black-70 {
       color: #1e1d1d;
@@ -92,7 +117,7 @@
     figure,
     main {
       display: block;
-      font-family: SolaimanLipi, "SiyamRupali", Vrinda;
+      font-family: 'Baloo Da 2', cursive;
     }
 
     figure {
@@ -1343,7 +1368,7 @@
     .border-bottom {
       border-bottom-style: solid;
       border-bottom-width: 2px;
-      color: #C0273996;
+      color: #C0273996 ;
     }
 
     .border-left {
@@ -2157,7 +2182,7 @@
     }
 
     .ampstart-related-section-items>li {
-      border-bottom: 1px solid #4a4a4a;
+      border-bottom: 1px solid #ccc;
     }
 
     .ampstart-related-section-items>li:last-child {
@@ -2234,7 +2259,7 @@
   </style>
 </head>
 
-<body>
+<body class="text-black body-">
   <!-- Start Navbar -->
   <header class="ampstart-headerbar fixed flex justify-start items-center top-0 left-0 right-0 pl2 pr4">
     <div role="button" aria-label="open sidebar" on="tap:header-sidebar.toggle" tabindex="0"
@@ -2341,9 +2366,11 @@
     <article>
       <header>
         <!-- scroll-top start-->
-        <span class="ampstart-subtitle block px3 pt3 mb2"><a id="top" href="#">জাতীয়</a>
+        <span class="target"><a class="target-anchor" id="top" href="#"></a>
           <amp-position-observer on="enter:hideAnim.start; exit:showAnim.start" layout="nodisplay">
           </amp-position-observer>
+        </span>
+        <span class="ampstart-subtitle block px3 pt3 mb2"><a href="Category Page.html">জাতীয়</a>
         </span>
         <amp-animation id="showAnim" layout="nodisplay">
           <script type="application/json">
@@ -2390,16 +2417,18 @@
           <p>
             প্রকাশিত: ১৬:৫২ ৭ সেপ্টেম্বর ২০২১
           </p>
-          <p>আপডেট: ১৭:১১ ৭ সেপ্টেম্বর ২০২১</p>
+          <p>আপডেট: ১৭:১১ ৭ সেপ্টেম্বর ২০২১
+            
+          </p>
         </address>
         <!-- End byline -->
         <div class="mb2 px1 mx2">
-          <amp-social-share class="bi" type="email" aria-label="Share by email"></amp-social-share>
-          <amp-social-share class="bi" type="facebook" aria-label="Share on Facebook"
+          <amp-social-share class="roundedSocial" type="email" width="30" height="30" aria-label="Share by email"></amp-social-share>
+          <amp-social-share class="roundedSocial" type="facebook" width="30" height="30" aria-label="Share on Facebook"
             data-param-app_id="254325784911610"></amp-social-share>
-          <amp-social-share class="bi" type="linkedin" aria-label="Share on LinkedIn"></amp-social-share>
-          <amp-social-share class="bi" type="twitter" aria-label="Share on Twitter"></amp-social-share>
-          <amp-social-share class="bi" type="whatsapp" aria-label="Share on WhatsApp"></amp-social-share>
+          <amp-social-share class="roundedSocial" type="linkedin" width="30" height="30" aria-label="Share on LinkedIn"></amp-social-share>
+          <amp-social-share class="roundedSocial" type="twitter" width="30" height="30" aria-label="Share on Twitter"></amp-social-share>
+          <amp-social-share class="roundedSocial" type="whatsapp" width="30" height="30" aria-label="Share on WhatsApp"></amp-social-share>
         </div>
         <amp-img src="https://www.daily-bangladesh.com/media/imgAll/2021March/20-2109071052.jpg" width="600"
           height="344" layout="responsive" alt="জনপ্রশাসন প্রতিমন্ত্রী ফরহাদ হোসেন- ফাইল ছবি" class="mb4"></amp-img>
@@ -2439,7 +2468,7 @@
               <figure class="ampstart-image-with-caption m0 relative mb4">
                 <amp-img src="https://www.daily-bangladesh.com/media/imgAll/2021March/f25-2109081013.jpg" width="300"
                   height="202" alt="প্রাণিসম্পদমন্ত্রীর" layout="responsive" class=""></amp-img>
-                <figcaption class="h4 mt1 mb-auto px3">
+                <figcaption class="h4 mt0 mb-auto pl3">
                   <a href="#">
                   জনবান্ধব মানসিকতা নিয়ে দায়িত্ব পালনের আহ্বান প্রাণিসম্পদমন্ত্রীর
                 </a>
@@ -2450,7 +2479,7 @@
               <figure class="ampstart-image-with-caption m0 relative mb4">
                 <amp-img src="https://www.daily-bangladesh.com/media/imgAll/2021March/joypurhat-2109081220.jpg" width="300"
                   height="202" alt="একসঙ্গে জন্ম নেয়া তিন ভাই-বোন" layout="responsive" class=""></amp-img>
-                <figcaption class="h4 mt1 mb-auto px3">
+                  <figcaption class="h4 mt0 mb-auto pl3">
                   <a href="#">
                   জয়পুরহাটে একসঙ্গে জন্ম নিল তিন ভাই-বোন
                 </a>
@@ -2461,7 +2490,7 @@
               <figure class="ampstart-image-with-caption m0 relative mb4">
                 <amp-img src="https://www.daily-bangladesh.com/media/imgAll/2021March/rohingya-1-2109040622.jpg" width="300"
                   height="202" alt="রোহিঙ্গা ক্যাম্প- ফাইল ছবি" layout="responsive" class=""></amp-img>
-                <figcaption class="h4 mt1 mb-auto px3">
+                  <figcaption class="h4 mt0 mb-auto pl3">
                   <a href="#">
                   জঙ্গিদের টার্গেট রোহিঙ্গা ক্যাম্প: অর্থায়নে দেশি-বিদেশি এনজিও
                 </a>
@@ -2472,7 +2501,7 @@
               <figure class="ampstart-image-with-caption m0 relative mb4">
                 <amp-img src="https://www.daily-bangladesh.com/media/imgAll/2021March/a-2109090500.jpg" width="300"
                   height="202" alt="সুন্দর ত্বক" layout="responsive" class=""></amp-img>
-                <figcaption class="h4 mt1 mb-auto px3">
+                  <figcaption class="h4 mt0 mb-auto pl3">
                 <a href="#">
                   সকালে ত্বকের যত্নে যা করবেন
                 </a>
@@ -2483,7 +2512,7 @@
               <figure class="ampstart-image-with-caption m0 relative mb4">
                 <amp-img src="https://www.daily-bangladesh.com/media/imgAll/2021March/cc-2109090434.jpg" width="300"
                   height="202" alt="কিডনি" layout="responsive" class=""></amp-img>
-                <figcaption class="h4 mt1 mb-auto px3">
+                  <figcaption class="h4 mt0 mb-auto pl3">
                   <a href="#">
                   কিডনির পাথর দূর করুন প্রাকৃতিক উপায়ে                
                 </a>
@@ -2494,7 +2523,7 @@
               <figure class="ampstart-image-with-caption m0 relative mb4">
                 <amp-img src="https://www.daily-bangladesh.com/media/imgAll/2021March/Untitled-2-2109090420.jpg" width="300"
                   height="202" alt="ময়মনসিংহ মেডিকেল কলেজ" layout="responsive" class=""></amp-img>
-                <figcaption class="h4 mt1 mb-auto px3">
+                  <figcaption class="h4 mt0 mb-auto pl3">
                   <a href="#">
                   ময়মনসিংহ মেডিকেলে আরও ৫ জনের প্রাণহানি                
                 </a>
